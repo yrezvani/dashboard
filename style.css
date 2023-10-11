@@ -21,16 +21,19 @@ h2 {
 }
 
 .header {
-    background-color: green;
     grid-column: 2 / 3;
-    height: 20vh;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 1.3fr 2fr;
+    gap: 1rem;
 }
 
 .main {
     background-color: bisque;
 }
 
-.sidebar .menue ul {
+.sidebar .menu ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -39,12 +42,10 @@ h2 {
 }
 
 #sidebar > .sidebar > img {
-    float: left;
     height: 2.5rem;
 }
 
 #sidebar img {
-    float: left;
     height: 1.6rem;
 }
 
@@ -65,9 +66,74 @@ h2 {
     padding: 2rem 1rem;
 }
 
-.menue > ul {
+.menu > ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     gap: .7rem;
+}
+
+.header .search {
+    display: flex;
+    padding-left: 1rem;
+    align-items: flex-end;
+}
+.search img {
+    height: 1.5rem;
+    flex-grow: 0;
+}
+
+.search-bar {
+    height: 1.5rem;
+    background-color: #a59f9f;
+    border-radius: 15px;
+    flex-grow: 1;
+}
+
+.notification {
+    display: flex;
+    gap: 1vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 4vw;
+}
+
+.notification-icon {
+    height: 1.5rem;
+}
+
+.notification img:nth-child(2) {
+    height: 2.2rem;
+}
+
+.header .account {
+    display: flex;
+    align-items: center;
+}
+
+.header .account img {
+    height: 3rem;
+}
+.header .account-name {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+.header-menu {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3vw;
+}
+
+.header-menu button {
+    height: 2.1rem;
+    width: 6rem;
+    border-radius: 15px;
+    background-color: rgb(88, 88, 236);
+    color: white;
+    font-weight:700;
+    font-size: .9rem;
 }
