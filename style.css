@@ -9,7 +9,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1.2fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 20vh 100vh;
 }
 
 h1 {
@@ -20,9 +20,13 @@ h2 {
     font-size: 1.3rem;
 }
 
+h3 {
+    font-size: 1.1rem;
+}
+
 .header {
     grid-column: 2 / 3;
-    height: 15vh;
+    height: 20vh;
     display: grid;
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 1.3fr 2fr;
@@ -59,7 +63,7 @@ h2 {
     grid-row: 1 / 3;;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .3fr .7fr 1.1fr;
+    grid-template-rows: 15vh 45vh 20vh;
 }
 
 #sidebar > div {
@@ -137,3 +141,80 @@ h2 {
     font-weight:700;
     font-size: .9rem;
 }
+
+.cards-wrapper {
+    grid-row: 1 / 3;
+    background-color: antiquewhite;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5vw;
+    padding-left: 1vw;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1vw;
+}
+
+.main h3 {
+    padding: 2vw 1vw;
+}
+
+.main {
+    background-color: #c1e7fa;
+}
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2vw;
+}
+
+.cards-wrapper {
+    grid-row: span 2;
+}
+
+.announcements {
+    height: 40vh;
+}
+
+.announcements-wrapper {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.announcements-wrapper h5 {
+    padding-left: 1vw;
+}
+
+.announcements-wrapper p {
+    font-size: .8rem;
+    padding-left: 1vw;
+}
+
+.announcements h3 {
+
+}
+
+.trending-wrapper img {
+    height: 2rem;
+}
+
+.trending-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.trending-wrapper .item  {
+    display: flex;
+}
+
